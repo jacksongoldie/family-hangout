@@ -1,7 +1,7 @@
 import './App.css';
 import { Box, Tag, TagLabel, TagCloseButton } from "@chakra-ui/react"
 import theme from '..';
-import Signup from './Signup';
+import UploadForm from './UploadForm';
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1><span as="img">💕</span>Family Hangout<span as="img">💕</span></h1>
-        <Signup />
+        {/* <Signup /> */}
         <Tag
           size={theme.fontSizes.sm}
           color={theme.colors.pink}
@@ -17,6 +17,7 @@ function App() {
       <TagLabel>Green</TagLabel>
       <TagCloseButton />
     </Tag>
+    <UploadForm />
         <Box bg='red' w="100%" h="200px" />
       </header>
     </div>
